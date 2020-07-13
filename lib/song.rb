@@ -5,5 +5,5 @@ class Song
     @name = song_name
     @artist = artist
     @genre = genre
-  end #new
+  end #initialize
 end #Song
