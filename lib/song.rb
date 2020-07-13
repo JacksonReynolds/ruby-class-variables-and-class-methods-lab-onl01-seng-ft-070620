@@ -16,4 +16,26 @@ class Song
     @artist = artist
     @genre = genre
   end #initialize
+
+  # Class Methods
+
+  def self.count
+    @@count
+  end #count
+
+  def self.artists
+    @@artists
+  end #artists
+
+  def self.genres
+    @@genres
+  end #genres
+
+  def self.genre_count
+    @@genres.length
+  end #genre_count
+
+  def self.artist_count
+    @@artists.length
+  end #artist_count
 end #Song
