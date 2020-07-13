@@ -36,7 +36,7 @@ class Song
     genre_hsh = {}
     @@genres.each do |genre|
       if !genre_hsh[genre]
-        genre_hsh[genre] = 0
+        genre_hsh[genre] = 1
       else
         genre_hsh[genre] += 1
       end #if
