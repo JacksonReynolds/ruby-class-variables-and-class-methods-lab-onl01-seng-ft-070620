@@ -37,6 +37,7 @@ class Song
         genre_hsh[genre] += 1
       end #if
     end #do
+    genre_hsh
   end #genres
 
   def self.genre_count
