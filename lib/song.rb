@@ -29,6 +29,10 @@ class Song
   end #artists
 
   def self.genres
+
+  end #genres
+
+  def self.genre_count
     genre_hsh = {}
     @@genres.each do |genre|
       if !genre_hsh[genre]
@@ -38,10 +42,6 @@ class Song
       end #if
     end #do
     genre_hsh
-  end #genres
-
-  def self.genre_count
-    @@genres.length
   end #genre_count
 
   def self.artist_count
