@@ -10,8 +10,8 @@ class Song
   # Instance Methods
   def initialize(song_name, artist, genre)
     @@count += 1
-    @@artists << artist
-    @@genres << genre
+    @@artists << artist if !@@artists.include?(artist)
+    @@genres << genre if !@@genres.include?(genre)
     @name = song_name
     @artist = artist
     @genre = genre
