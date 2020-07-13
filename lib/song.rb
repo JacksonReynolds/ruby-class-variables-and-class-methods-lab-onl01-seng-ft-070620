@@ -8,6 +8,7 @@ class Song
   @@genres = []
 
   # Instance Methods
+
   def initialize(song_name, artist, genre)
     @@count += 1
     @@artists << artist
@@ -28,7 +29,14 @@ class Song
   end #artists
 
   def self.genres
-    @@genres
+    genre_hsh = {}
+    @@genres.each do |genre|
+      if !genre_hsh[genre]
+        genre_hsh[genre] = 0
+      else
+        genre_hsh[genre] += 1
+      end #if
+    end #do
   end #genres
 
   def self.genre_count
